@@ -15,7 +15,7 @@ a{
 }
 
 .container{
-    max-width: 80vw;
+    max-width: 88vw;
     padding: 2rem 1rem;
     margin:0 auto;
     /* background-color: #e7b9b9; */
@@ -41,13 +41,15 @@ a{
 .main_container{
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 290px));
     
 }
 
 
 
-@media (max-width: 1300px){
+/* @media (max-width: 1300px){
     .main_container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -62,7 +64,7 @@ a{
     .main_container{
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
 
 .card_container{
     background: rgb(34,193,195);
